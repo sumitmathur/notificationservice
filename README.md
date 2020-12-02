@@ -12,7 +12,7 @@ Maven
 
 Usage:
  This spring boot service allow the user to send bulk request for multiple notification channel.
- Service is mocking the email and slack notification. For actual implementation you need to implenent smpt and slack webhook.
+ Service is mocking the email and slack notification. For actual implementation you need to implement smtp and slack webhook.
  
 URL: http://localhost:8080/v1/notify
 
