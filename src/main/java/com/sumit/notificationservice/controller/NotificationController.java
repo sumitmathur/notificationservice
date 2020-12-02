@@ -59,6 +59,13 @@ public class NotificationController {
                     notificationError.setRetryAble(true);
                     notificationError.setHttpStatus(400);
                     notificationError.setError(INVALID_REQUEST_PARAMETERS);
+                    LOG.error("Invalid request for channel={},from={},to={},subject={}",
+                            request.getRequests()[i].getChannel(),
+                            request.getRequests()[i].getFrom(),
+                            request.getRequests()[i].getTo(),
+                            request.getRequests()[i].getSubject()
+
+                    );
                     throw new NotificationServiceException(notificationError);
                 }
 
