@@ -11,7 +11,7 @@ import java.util.concurrent.Executor;
 @Configurable
 public class AppConfiguration {
     @Bean(name = "asyncConfiguration")
-    public Executor getAsyncEntitlementKafkaThreadPool() {
+    public Executor getAsyncThreadPool() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(2);
         executor.setMaxPoolSize(5);
